@@ -1,0 +1,186 @@
+*{
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.navbar{
+   background-color: #F5E6D3;
+   font-style: italic;
+   padding: 10px 20px;
+}
+
+.navdiv{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap; 
+}
+
+.logo a{
+   font-size: 28px;
+   font-weight: 700;
+   color: #6B3E26;
+}
+
+ul{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+li{
+   list-style: none;
+}
+
+li a{
+   color: #6B3E26;
+   font-size: 18px;
+   font-weight: bold;
+   margin-left: 20px;
+   font-style: italic;
+}
+
+li a:hover{
+   text-decoration: underline;
+}
+
+
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url('Napoleons-Bakery-Donuts-Pastries-scaled.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.login-box{
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: #6b3e2691;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+
+h2{
+    font-size: 2em;
+    color: #E89A3D;
+    text-align: center;
+}
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+    border-bottom: 2px solid #E89A3D;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #E89A3D;
+    padding: 0 5px;
+}
+
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #E89A3D;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label{
+    top: -8px;
+    font-size: 0.8em;
+}
+
+
+.remember-forgot{
+   margin: -10px 0 15px;
+   font-size: .9em;
+   color: #E89A3D;
+   display: flex;
+   justify-content: space-between;
+}
+
+.remember-forgot label input{
+   margin-right: 5px;
+}
+
+.remember-forgot a{
+   color: #E89A3D;
+}
+
+.remember-forgot a:hover{
+   text-decoration: underline;
+}
+
+
+button{
+   width: 100%;
+   height: 40px;
+   border-radius: 40px;
+   background: #E89A3D;
+   border: none;
+   cursor: pointer;
+   font-size: 1em;
+   font-weight: bold;
+}
+
+
+.register-link {
+   font-size: .9em;
+   color: #E89A3D;
+   text-align: center;
+   margin: 20px 0 10px;
+}
+
+.register-link a{
+   color: #E89A3D;
+   font-weight: 600;
+}
+
+.register-link a:hover{
+   text-decoration: underline;
+}
+
+
+@media (max-width: 768px){
+
+   .navdiv{
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   ul{
+      flex-direction: column;
+      width: 100%;
+   }
+
+   li{
+      margin: 10px 0;
+   }
+
+   li a{
+      margin-left: 0;
+   }
+}
